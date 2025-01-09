@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Form Studios - Index</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .main-container {
+            display: grid;
+            grid-template-columns: 15% 70% 15%;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 10px;
+            align-items: start;
+        }
+
+        .sidebar-left, .sidebar-right {
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-left {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar-right {
+            position: sticky;
+            top: 10px;
+            height: fit-content;
+        }
+
+        .content-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .content-section h2 {
+            color: #333;
+        }
+
+        .link-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .link-button:hover {
+            background-color: #0097a7;
+            box-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
+        }
+
+        footer {
+            background-color: #282c34;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home.html"><img src="NovaForm.webp" alt="Nova Form Studios Logo" class="logo"></a>
+        <h1>Nova Form Studios</h1>
+        <nav>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar-left">
+            <div class="card">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#contact-info">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Visit Our Blog</h3>
+                <p>Check out the latest updates, insights, and tips on 3D printing, design, and technology in our blog.</p>
+                <a href="blog.html" class="link-button">Visit the Blog</a>
+            </div>
+
+            <div class="card">
+                <h3>Explore Our Shop</h3>
+                <p>Purchase commercial licenses for unique 3D print designs, including custom organizers, desk accessories, and more.</p>
+                <a href="shop.html" class="link-button">Go to Shop</a>
+            </div>
+        </aside>
+
+        <div>
+            <section class="content-section">
+                <h2>Welcome to Nova Form Studios</h2>
+                <p>Nova Form Studios was created to share my journey and growth in 3D modeling, printing, and other skills through my blog. This platform showcases projects that push my skills, teach me new techniques, and sometimes fulfill requests from friends and family.</p>
+                <p>In addition to sharing my experiences, Nova Form Studios offers commercial licenses for all my designs and 3D models. Whether you're a hobbyist looking for creative inspiration or a professional seeking high-quality designs, you'll find something unique here.</p>
+                
+                <h3>Why Choose Nova Form Studios?</h3>
+                <ul>
+                    <li><strong>Authentic Journey:</strong> Follow my personal growth as I explore 3D modeling, printing, and design.</li>
+                    <li><strong>Dynamic Creativity:</strong> Find a variety of designs, from skill-building experiments to personalized creations for friends and family.</li>
+                    <li><strong>Future Customization:</strong> Look forward to customizable modular designs that will be available on the site.</li>
+                    <li><strong>Exclusive Designs:</strong> Purchase commercial licenses for unique and original 3D models.</li>
+                </ul>
+                
+                <h3>Future Vision</h3>
+                <p>I'm excited about the possibility of customizable and modular designs on the site. I'm also open to potential collaborations and believe in the importance of community engagement. Building a supportive and interactive space for sharing ideas is something I look forward to.</p>
+                
+                <p>Join me as I continue to explore, create, and innovate in the fascinating world of 3D printing and design!</p>
+            </section>
+
+            <section class="content-section">
+                <h2>Featured Projects</h2>
+                <div class="project">
+                    <h3>Ball Buddy</h3>
+                    <p>A bowling ball display with precision-engineered bearings that allows smooth spinning for cleaning, marking, and maintenance. Designed as a thoughtful gift for avid bowling enthusiasts.</p>
+                </div>
+                <div class="project">
+                    <h3>Custom Desk Organizer</h3>
+                    <p>A sleek, functional organizer designed to keep workspaces tidy, featuring compartments for pens, notepads, and gadgets.</p>
+                </div>
+                <div class="project">
+                    <h3>3D Printed Art Sculpture</h3>
+                    <p>An artistic 3D printed sculpture designed using Blender, showcasing intricate details and a modern aesthetic.</p>
+                </div>
+            </section>
+
+            <section class="content-section" id="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, suggestions, or business inquiries, feel free to reach out using the form below:</p>
+                <form action="/submit" method="post">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+
+        <aside class="sidebar-right">
+            <h3>Advertisements</h3>
+            <div class="advertisement">
+                <p>Check out our partners for the best deals on 3D printing supplies and accessories!</p>
+                <p><a href="#">Partner 1: 3D Printing Supplies</a></p>
+                <p><a href="#">Partner 2: Design Tools</a></p>
+                <p><a href="#">Partner 3: Materials</a></p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Loren Brownlee - Nova Form Studios</p>
+    </footer>
+</body>
+</html>
